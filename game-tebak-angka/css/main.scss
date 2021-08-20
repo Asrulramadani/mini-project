@@ -1,0 +1,91 @@
+$green : rgb(0, 235, 0);
+$blue  : lightskyblue;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+
+
+    .container {
+        margin-top: 30px;
+        max-width: 500px;
+        height: auto;
+        margin: 20px auto;
+        padding: 1rem 3.5rem;
+        border: 3px solid $blue;
+        border-radius: .8rem;
+        -webkit-border-radius: .8rem;
+        -moz-border-radius: .8rem;
+        -ms-border-radius: .8rem;
+        -o-border-radius: .8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        
+        h1,h2,input,button{
+            margin-bottom: 1rem;
+        }
+        h1{
+            font-size: 1.5rem;
+        }
+
+        .hasil,.result {
+            font-size: 1.2rem;
+        }
+
+        .input {
+            width: 70%;
+            padding: .2rem .9rem;
+            border: 3px solid $blue;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+            outline: none;
+            text-align: center;
+            font-size: .8rem;
+            font-weight: 600;
+            transition: .4s;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            -o-transition: .4s;
+        }
+
+        .kirim {
+            padding: .2rem 1.3rem;
+            border: 3px solid $green;
+            background-color: #fff;
+            border-radius: .5rem;
+            -webkit-border-radius: .5rem;
+            -moz-border-radius: .5rem;
+            -ms-border-radius: .5rem;
+            -o-border-radius: .5rem;
+            outline: none;
+            font-weight: 600;
+            transition: .3s;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+            cursor: pointer;
+                
+            &:hover,&:active{
+                background-color: $green;
+                color: white;
+            }
+        }
+    }
+}
