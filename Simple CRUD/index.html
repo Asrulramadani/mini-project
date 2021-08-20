@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+
+        <div class="edit_container">
+            <h2>Edit Data</h2>
+            <input type="text" id="editNamaBarang" autocomplete="off" placeholder="Nama Barang" required>
+            <input type="text" id="editHarga" autocomplete="off" placeholder="Harga Barang" required>
+            <input type="number" id="editStok" autocomplete="off" placeholder="Stok Barang" required>
+
+            <div class="btn_edit">
+                <button id="cancelEdit" onclick="cancel()">Cancel</button>
+                <button type="submit" id="saveEdit" onclick="save()">Save</button>
+            </div>
+        </div>
+
+        <div class="input_container">
+            <h1>Data Barang</h1>
+            <form action="#" id="inputNew">
+                <div class="input_container">
+                    <input type="text" id="#namaBarang" autocomplete="off" placeholder="Masukkan Nama Barang" required>
+                    <input type="text" id="#harga" autocomplete="off" placeholder="Masukkan Harga Barang" required>
+                    <input type="number" id="#stok" autocomplete="off" placeholder="Masukkan Jumlah Stok" required>
+                </div>
+                <button onclick="add()">Simpan</button>
+            </form>
+        </div>
+        <table class="data_table" cellpadding='0' cellspacing='0' id="data_table">
+            <tr>
+                <th>No</th>
+                <th>Nama produk</th>
+                <th>Harga</th>
+                <th>Stok</th>
+                <th>Action</th>
+            </tr>
+            <!-- <tr>
+                <td>1</td>
+                <td>Minyak Goreng</td>
+                <td>Rp15.000,00</td>
+                <td>12</td>
+                <td>
+                    <button class="edit" onclick="edit()">Edit</button>
+                    <button class="del" onclick="del()">Hapus</button>
+                </td>
+            </tr> -->
+        </table>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

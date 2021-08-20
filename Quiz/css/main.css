@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'VAGRounded';
+  src: url("../fonts/VAGRounded.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url("../fonts/RobotoSlab-Medium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+button, label {
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+input[type='radio'] {
+  visibility: hidden;
+}
+
+input[type='radio']:checked + label {
+  background-color: #447fff;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'VAGRounded';
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-family: 'RobotoSlab';
+  text-align: center;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 166, 0, 0.808);
+  padding: 2rem;
+}
+
+section .opening_window {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .opening_window.hidden {
+  display: none;
+}
+
+section .opening_window button {
+  padding: 5px 20px;
+  font-family: 'RobotoSlab';
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: #447fff;
+  color: rgba(255, 255, 255, 0.808);
+  border: 3px solid transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+section .opening_window button:hover {
+  border-color: #447fff;
+  color: #447fff;
+  background-color: transparent;
+}
+
+section .quiz_window {
+  height: 100%;
+  width: 500px;
+  padding: 3rem 1rem 1rem;
+}
+
+section .quiz_window .choice_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+section .quiz_window .choice_container .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .quiz_window .choice_container .row .choice_box {
+  padding: 1rem;
+}
+
+section .quiz_window .choice_container .row .choice_box label {
+  font-size: 1.1rem;
+  font-family: 'RobotoSlab';
+  border: 3px solid #447fff;
+  padding: 4px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+section .quiz_window .choice_container .row .choice_box label:hover {
+  background-color: #447fff;
+}
+
+section .quiz_window button {
+  width: 100%;
+  padding: 5px;
+  font-family: 'RobotoSlab';
+  font-size: 1rem;
+  background-color: lightgreen;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+section .quiz_window button:hover {
+  border-color: lightgreen;
+  background-color: transparent;
+}
+
+section .closing_window .correct_answer {
+  margin: 0 auto;
+  width: 100;
+  padding: 0 2rem;
+}
+
+section .closing_window .correct_answer p.keterangan {
+  font-family: 'RobotoSlab';
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+section .closing_window .correct_answer li {
+  font-family: 'RobotoSlab';
+  margin-bottom: .5rem;
+}
+
+section .closing_window .correct_answer li p {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+section .closing_window .correct_answer li span {
+  padding: 2px 15px;
+  background-color: rgba(0, 199, 0, 0.849);
+  color: rgba(255, 255, 255, 0.808);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
